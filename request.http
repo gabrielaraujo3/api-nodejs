@@ -1,0 +1,29 @@
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+  "name": "Caderno 96 folhas",
+  "price": 13.20
+}
+
+###
+
+get http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/96166408-5f13-4951-b4bb-7a8bc8efd4d4
+
+###
+
+PUT http://localhost:4002/products/7f136526-9c08-414b-8c91-1977d3719b84
+Content-Type: application/json
+
+{
+  "name": "Caderno preto 96 folhas",
+  "price": 12.00
+}
+
+###
+
+DELETE http://localhost:4002/products/7f136526-9c08-414b-8c91-1977d3719b84
